@@ -1,6 +1,7 @@
-def second_largest():
+def main():  
     lst = []
     for i in range(4):
         lst.append(int(input()))
     lst.sort()
-    return lst[2]
+    print(lst[2])
+main()
