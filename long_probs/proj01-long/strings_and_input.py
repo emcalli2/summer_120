@@ -1,6 +1,6 @@
 def string_information():  
     # read in an input string
-    string = input()
+    string = input("input string: ")
 
     # length of string
     print(len(string))
@@ -16,7 +16,7 @@ def string_information():
 
     # the entire string where lowercase char are now upper
     print(string.upper())
-    
+
     # classify the first char of the string (see specs)
     first_char = string[0]
     if first_char.lower() in "qwerty":
