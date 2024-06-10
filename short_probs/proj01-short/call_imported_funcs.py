@@ -1,5 +1,5 @@
 from short1_thing import *
-def main()
+def main():
     line = input()
     foo_line = foo(line)
     print(foo_line)
