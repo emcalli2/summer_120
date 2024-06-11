@@ -1,9 +1,16 @@
 """ File: strings_and_input.py
     Author: Elizabeth McAllister
-    Purpose: Sorts words and count gathered from an inputted file
+    Purpose: prints various information about strings
+            such as length, second character, etc. as well
+            as multiplies two inputted integers together
     Class: Csc 120 Summer 2024
 """
-def string_information():  
+def string_information():
+    """This function prints out information about a string
+       Arguments:none
+       Return Value: none
+       Pre-condition: the input is a string
+    """
     # read in an input string
     string = input("input string: ")
 
@@ -36,12 +43,13 @@ def string_information():
         print("OTHER")
 
 def multiply_nums():
-    #read in two numbers
-    # convert numbers to integers (use int())
+    """This function multiplies two inputted integers together
+       Arguments:none
+       Return Value: none
+       Pre-condition: the input is an integer
+    """
     num1 = int(input())
     num2 = int(input())
-    # multiply them together
-    # print result
     print(num1 * num2)
 
 
