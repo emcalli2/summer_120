@@ -1,3 +1,8 @@
+""" File: strings_and_input.py
+    Author: Elizabeth McAllister
+    Purpose: Sorts words and count gathered from an inputted file
+    Class: Csc 120 Summer 2024
+"""
 def string_information():  
     # read in an input string
     string = input("input string: ")
