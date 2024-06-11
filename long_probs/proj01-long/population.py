@@ -23,4 +23,7 @@ def population():
             print("")
     print("# of States/Territories: " + str(num_of_terr))
     print("Total Population: " + str(population))
-population()
+
+def main():
+    population()
+main()
