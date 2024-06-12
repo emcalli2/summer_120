@@ -40,7 +40,7 @@ def population():
             print("")
     print("# of States/Territories: " + str(num_of_terr))
     print("Total Population: " + str(population))
-    print("CLOSE FILE")
+    infile.close()
 def main():
     population()
 main()

@@ -18,7 +18,7 @@ def count():
     infile = open(filename, "r")
     info = {}
     lst_of_tup = []
-    print("STEP 1: THE ORIGINAL DICTONARY")
+    print("STEP 1: THE ORIGINAL DICTIONARY")
     for line in infile:
         # ignores any line that is empty or has a #
         if line[0] != "#" and len(line) > 1:
@@ -42,11 +42,11 @@ def count():
     # sorts the tuple
     lst_of_tup.sort()
     print(lst_of_tup)
-    
+
     print("STEP 4: THE ACTUAL OUTPUT")
     for key,value in lst_of_tup:
         print(value + " " + str(key))
-
+    infile.close()
 def main():
     count()
 main()
