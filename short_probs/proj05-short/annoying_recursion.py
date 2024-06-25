@@ -48,7 +48,7 @@ def annoying_tree_of_tuples(n):
     if n == 5:
         return (annoying_tree_of_tuples(4),5,annoying_tree_of_tuples(4))
     if n == 6:
-        return (annoying_tree_of_tuples(4),6,annoying_tree_of_tuples(5))
+        return (annoying_tree_of_tuples(5),6,annoying_tree_of_tuples(5))
     else:
         return (annoying_tree_of_tuples(n-1),n,annoying_tree_of_tuples(n-1))
 
