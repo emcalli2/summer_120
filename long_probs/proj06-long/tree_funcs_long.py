@@ -2,7 +2,7 @@
     File: tree_funcs_long.py
     Author: Elizabeth McAllister
     Purpose: This program contains nine functions that 
-            preform different opperations on or involving 
+            preform different operations on or involving 
             trees, such as searching, finding a max, or printing
             out a traversal of the tree. 
     Class: Csc 120 Summer 2024
