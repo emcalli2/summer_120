@@ -84,71 +84,25 @@ def main():
     win = graphics.graphics(500,500,"Pipe Grid")
     win.rectangle(0,0,500,500,"gray")
     draw_grid(win)
-    rand_list = []
-    print("hello")
-    i = 0
-    while i < 25:
-        print(i)
-        randx = random.randrange(0,400,100)
-        randy = random.randrange(0,400,100)
-        if (randx,randy) not in rand_list:
+    randx = 0
+    while randx < 500:
+        randy = 0
+        while randy < 500:
+            print((randx,randy))
+            num = random.randint(0,3)
             north = random.choice([True, False])
             south = random.choice([True, False])
             east = random.choice([True, False])
             west = random.choice([True, False])
             add_blue = random.choice([True, False])
-            if i == 0:
+            if num == 0:
                 draw_square_line(win,randx + 33,randy + 33,north, east, south, west,add_blue)
-            if i == 1:
-                draw_square_line(win,randx + 33,randy + 33,north, east, south, west,add_blue)
-            if i == 2:
-                draw_square_line(win,randx + 33,randy + 33,north, east, south, west,add_blue)
-            if i == 3:
-                draw_square_line(win,randx + 33,randy + 33,north, east, south, west,add_blue)
-            if i == 4:
-                draw_square_line(win,randx + 33,randy + 33,north, east, south, west,add_blue)
-            if i == 5:
-                draw_square_line(win,randx + 33,randy + 33,north, east, south, west,add_blue)
-            if i == 6:
-                draw_square_line(win,randx + 33,randy + 33,north, east, south, west,add_blue)
-            if i == 7:
-                draw_square_line(win,randx + 33,randy + 33,north, east, south, west,add_blue)
-            if i == 8:
-                draw_square_line(win,randx + 33,randy + 33,north, east, south, west,add_blue)
-            if i == 9:
-                draw_square_line(win,randx + 33,randy + 33,north, east, south, west,add_blue)
-            if i == 10:
+            elif num == 1:
                 draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 11:
-                draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 12:
-                draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 13:
-                draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 14:
-                draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 15:
-                draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 16:
-                draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 17:
-                draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 18:
-                draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 19:
-                draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 20:
-                draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 21:
-                draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 22:
-                draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 23:
-                draw_corner(win,randx+35,randy+35,north, east, south, west,add_blue)
-            if i == 24:
+            else:
                 draw_box_multi(win,randx+35,randy+35,north, east, south, west,add_blue)
-            rand_list.append((randx,randy))
-            i +=1
+            randy += 100
+        randx += 100
 
     win.mainloop()
 main()
