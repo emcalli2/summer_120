@@ -88,7 +88,6 @@ def main():
     while randx < 500:
         randy = 0
         while randy < 500:
-            print((randx,randy))
             num = random.randint(0,3)
             north = random.choice([True, False])
             south = random.choice([True, False])
