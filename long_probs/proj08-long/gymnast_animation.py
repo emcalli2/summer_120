@@ -369,15 +369,15 @@ def nineteenth_frame(win):
 
 def twenty_frame(win):
     fans_arms_up(win)
-    win.line(100,100,100,150,"yellow",5)
+    win.line(100,105,100,140,"yellow",10)
     win.ellipse(130,125,40,40,"yellow")
     win.ellipse(130,125,20,20,"black")
 
-    win.line(300,100,300,150,"yellow",5)
+    win.line(300,105,300,140,"yellow",10)
     win.ellipse(330,125,40,40,"yellow")
     win.ellipse(330,125,20,20,"black")
 
-    win.line(500,100,500,150,"yellow",5)
+    win.line(500,105,500,140,"yellow",10)
     win.ellipse(530,125,40,40,"yellow")
     win.ellipse(530,125,20,20,"black")
     # person
@@ -387,15 +387,15 @@ def twenty_frame(win):
     win.line(750,650,700,600,"white",5) # left arm
 
 def twentyone_frame(win):
-    win.line(100,100,100,150,"yellow",5)
+    win.line(100,105,100,140,"yellow",10)
     win.ellipse(130,125,40,40,"yellow")
     win.ellipse(130,125,20,20,"black")
 
-    win.line(300,100,300,150,"yellow",5)
+    win.line(300,105,300,140,"yellow",10)
     win.ellipse(330,125,40,40,"yellow")
     win.ellipse(330,125,20,20,"black")
 
-    win.line(500,100,500,150,"yellow",5)
+    win.line(500,105,500,140,"yellow",10)
     win.ellipse(530,125,40,40,"yellow")
     win.ellipse(530,125,20,20,"black")
     # fans
@@ -428,7 +428,7 @@ def main():
         # stands
         win.rectangle(100,200,600,50,"red")
         #floor
-        win.rectangle(0,750,200,50,"blue")
+        win.rectangle(0,750,150,50,"blue")
         # beam
         win.rectangle(175,700,500,50,"purple")
         win.line(300,700,300,800,"purple",5)
@@ -475,6 +475,7 @@ def main():
             twenty_frame(win)
         if i == 20:
             twentyone_frame(win)
+            win.update_frame(3)
         if i == 21:
             i = -1
         win.update_frame(5)
