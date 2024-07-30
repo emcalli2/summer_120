@@ -1,6 +1,21 @@
+""" 
+    File: gymnast_animation.py
+    Author: Elizabeth McAllister
+    Purpose: This program animates a scene where a
+    gymnast is preforming a routine and fans are cheering
+    in the stands, this has twenty-one frames that are
+    run by the main function
+    Class: Csc 120 Summer 2024
+"""
+
 import graphics
 
 def fans_arms_up(win):
+    """
+    This function creates a scene where the fans arms are all up
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     win.ellipse(200,100,50,50,"white")
     win.line(200,100,200,200,"white",5)
     win.line(200,150,150,100,"white",5) #left arm
@@ -17,6 +32,11 @@ def fans_arms_up(win):
     win.line(600,150,650,100,"white",5) #right arm
 
 def fans_arms_down(win):
+    """
+    This function creates a scene where the fans arms are all down
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     win.ellipse(200,100,50,50,"white")
     win.line(200,100,200,200,"white",5)
     win.line(200,150,150,200,"white",5) #left arm
@@ -33,6 +53,13 @@ def fans_arms_down(win):
     win.line(600,150,650,200,"white",5) #right arm
 
 def starting_frame(win):
+    """
+    This function creates a whole scene where the fans arms
+    are all down and the gymnast is standing on the floor 
+    waiting to start the routine
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     # fans
     win.ellipse(200,100,50,50,"white")
     win.line(200,100,200,200,"white",5)
@@ -58,6 +85,13 @@ def starting_frame(win):
     win.line(100,650,150,550,"white",5) #right arm
 
 def second_frame(win):
+    """
+    This function creates a scene where the first fan has arms
+    down, the second has arm up and down, the third has arms up
+    the gymnast is begining to start the routine.
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     # fans
     win.ellipse(200,100,50,50,"white")
     win.line(200,100,200,200,"white",5)
@@ -83,6 +117,13 @@ def second_frame(win):
     win.line(100,650,150,700,"white",5) #right arm
     
 def third_frame(win):
+    """
+    This function creates a scene where the first fan has arms up
+    and down, second fans has arms up, third has arms up and down,
+    the gymnast is beginning a handstand
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     # fans
     win.ellipse(200,100,50,50,"white")
     win.line(200,100,200,200,"white",5)
@@ -108,6 +149,12 @@ def third_frame(win):
     win.line(100,650,150,700,"white",5) #right arm
 
 def fourth_frame(win):
+    """
+    This function creates a scene with all fans arms down, and
+    the gymnast is kicking into a handstand
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     # fans
     win.ellipse(200,100,50,50,"white")
     win.line(200,100,200,200,"white",5)
@@ -133,6 +180,12 @@ def fourth_frame(win):
     win.line(150,650,200,700,"white",5) #right arm
 
 def fifth_frame(win):
+    """
+    This function creates a frame with the fans arms down, and the gymnast
+    is almost into a handstand
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     fans_arms_down(win)
     # person
     win.ellipse(250,600,50,50,"white") #head
@@ -143,6 +196,12 @@ def fifth_frame(win):
     win.line(200,620,200,700,"white",5) #right arm
 
 def six_frame(win):
+    """
+    This function creates a framw with fams arms up,
+    the gymnast has completed the handstand
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     fans_arms_up(win)
     # person
     win.ellipse(200,600,50,50,"white") #head
@@ -153,6 +212,12 @@ def six_frame(win):
     win.line(200,550,175,700,"white",5) #right arm
 
 def seventh_frame(win):
+    """
+    This function creates a frame with fans arms down
+    and the gymnast is beginning to sit for a backhandspring.
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     fans_arms_down(win)
     # person
     win.ellipse(200,600,50,50,"white") #head
@@ -163,6 +228,12 @@ def seventh_frame(win):
     win.line(200,600,150,650,"white",5) #right arm
 
 def eigth_frame(win):
+    """
+    This function creates a scene where the fans arms are down
+    and the gymnast is jumping into a backhandspring
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     fans_arms_down(win)
     # person
     win.ellipse(250,600,50,50,"white") #head
@@ -173,6 +244,12 @@ def eigth_frame(win):
     win.line(300,575,200,650,"white",5) #right arm
 
 def nineth_frame(win):
+    """
+    This function creates a function with fans arms down
+    and the gymnast is still jumping into a backhandspring
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     fans_arms_down(win)
     # person
     win.ellipse(250,600,50,50,"white") #head
@@ -183,6 +260,12 @@ def nineth_frame(win):
     win.line(300,600,200,600,"white",5) #right arm
 
 def tenth_frame(win):
+    """
+    This function creates a frame where the fans arms are 
+    down and the gymnast is arching into a backhandspring
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     # fans
     fans_arms_down(win)
     # person
@@ -194,6 +277,13 @@ def tenth_frame(win):
     win.line(250,600,200,600,"white",5) #right arm
 
 def eleventh_frame(win):
+    """
+    This function creates a framw with all fans one arm
+    up and one arm down, the gymnast is coming out of a 
+    backhandspring
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     # fans
     win.ellipse(200,100,50,50,"white")
     win.line(200,100,200,200,"white",5)
@@ -219,6 +309,12 @@ def eleventh_frame(win):
     win.line(350,600,300,550,"white",5) #right arm
 
 def twelvth_frame(win):
+    """
+    This function creates a frame with fans other arms
+    up and down, the gymnast is finishing the backhandspring
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     # fans
     win.ellipse(200,100,50,50,"white")
     win.line(200,100,200,200,"white",5)
@@ -244,6 +340,12 @@ def twelvth_frame(win):
     win.line(350,600,350,500,"white",5) #right arm
 
 def thirteenth_frame(win):
+    """
+    This function creates a frame where the fans have their
+    arms in a "T" and the gymnast is dismounting the beam
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     # fans
     win.ellipse(200,100,50,50,"white")
     win.line(200,100,200,200,"white",5)
@@ -270,6 +372,13 @@ def thirteenth_frame(win):
     win.line(400,600,400,500,"white",5) #right arm
 
 def fourteenth_frame(win):
+    """
+    This function creates a frame where the fams arms are
+    in a "T" and the gymnast is still beginning to 
+    dismount the beam
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     # fans
     win.ellipse(200,100,50,50,"white")
     win.line(200,100,200,200,"white",5)
@@ -293,6 +402,13 @@ def fourteenth_frame(win):
     win.line(425,600,500,500,"white",5) # left arm
 
 def fifteenth_frame(win):
+    """
+    This function creates a frame with all the fans arms 
+    up and the gymnast is preparing to land but still
+    in the air.
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     # fans
     win.ellipse(200,100,50,50,"white")
     win.line(200,100,200,200,"white",5)
@@ -316,6 +432,12 @@ def fifteenth_frame(win):
     win.line(450,600,550,550,"white",5) # left arm
 
 def sixteenth_frame(win):
+    """
+    This function creates a scene with all fans arms up, 
+    and the gymnast is still preparing to land
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     # fans
     win.ellipse(200,100,50,50,"white")
     win.line(200,100,200,200,"white",5)
@@ -339,6 +461,12 @@ def sixteenth_frame(win):
     win.line(550,600,600,650,"white",5) # left arm
 
 def seventeenth_frame(win):
+    """
+    This function creates a frame with fans arms  down and
+    the gymnast is begining to land
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     # fans
     fans_arms_down(win)
 
@@ -349,6 +477,12 @@ def seventeenth_frame(win):
     win.line(600,650,600,700,"white",5) # left arm
 
 def eighteenth_frame(win):
+    """
+    This function creates a frame with fans arms down and the gymnast
+    is almost landed
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     # fans
     fans_arms_down(win)
 
@@ -359,6 +493,12 @@ def eighteenth_frame(win):
     win.line(600,650,600,700,"white",5) # left arm
 
 def nineteenth_frame(win):
+    """
+    This function creates a frame with fans arms down and
+    the gymnast is touching the ground to land.
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     fans_arms_down(win)
 
     # person
@@ -368,6 +508,12 @@ def nineteenth_frame(win):
     win.line(700,550,700,500,"white",5) # left arm
 
 def twenty_frame(win):
+    """
+    This function creates a scene where the fans arms 
+    are up and the gymnast has landed.
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     fans_arms_up(win)
     win.line(100,105,100,140,"yellow",10)
     win.ellipse(130,125,40,40,"yellow")
@@ -387,6 +533,13 @@ def twenty_frame(win):
     win.line(750,650,700,600,"white",5) # left arm
 
 def twentyone_frame(win):
+    """
+    This function creates a scene with fans arms up
+    and they are putting up 10s for the gymnast, and 
+    the gymnast has finishes their routine.
+    Parameters: win - a graphics window of size 800 x 800
+    Returns: None
+    """
     win.line(100,105,100,140,"yellow",10)
     win.ellipse(130,125,40,40,"yellow")
     win.ellipse(130,125,20,20,"black")
@@ -421,6 +574,13 @@ def twentyone_frame(win):
     win.line(750,700,700,650,"white",5) # left arm
     win.line(750,700,800,650,"white",5) # right arm
 def main():
+    """
+    This is a main function that creates a loop with
+    a counter that determines which scene to be run,
+    it also creates the 800 x 800 graphics window (win)
+    Parameters: None
+    Returns: None
+    """
     win = graphics.graphics(800, 800, "window_title")
     i = 0
     while not win.is_destroyed():
